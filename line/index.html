@@ -1,0 +1,90 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Line.js Demos</title>
+<link rel="stylesheet" type="text/css" href="normalize.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="line.js"></script>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="line.css" />
+<link rel="stylesheet" type="text/css" href="custom.css" />
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/animation/Border-Animation-Effects-with-jQuery-CSS3-Line-js.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<h1 style="margin-top:150px; color:#fff" align="center">jQuery Line.js Demos</h1>
+<div class="container">
+<div class="box1 float-left allwayround">
+<h1>I go all the way around</h1>
+</div>
+<div class="box2 float-left underlined-bottom">
+<h1>I get underlined</h1>
+</div>
+</div>
+<div class="container">
+<div class="box1 float-left underlined-right">
+<h1>I get underlined right</h1>
+</div>
+<div class="box2 float-left underlined-left">
+<h1>I get underlined left</h1>
+</div>
+</div>
+<div class="container">
+<div class="box1 float-left underlined-top">
+<h1>I get underlined top</h1>
+</div>
+<div class="box2 float-left simultaneous">
+<h1>I get boxed in</h1>
+</div>
+</div>
+</body>
+
+<!-- INIT LINE.JS -->
+<script type="text/javascript">
+	$( document ).ready(function() {
+
+		$('.underlined-bottom').line(animationDuration, "4px", "bottom", "onhover", backgroundColor);
+		$('.underlined-right').line(animationDuration, "4px", "right", "onhover", backgroundColor);
+		$('.underlined-top').line(animationDuration, "4px", "top", "onhover", backgroundColor);
+		$('.underlined-left').line(animationDuration, "4px", "left", "onhover", backgroundColor);
+		$('.simultaneous').borderSimultaneous(animationDuration, borderWidth, "onhover", backgroundColor);
+		$('.allwayround').borderContinuous(animationDuration, borderWidth, "onhover", backgroundColor);
+		
+	});
+	</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

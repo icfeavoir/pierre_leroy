@@ -1,0 +1,74 @@
+.importantWordIntro{
+	color: white;
+}
+
+.no-margin-padding{
+	margin: 0;
+	padding: 0;
+}
+
+.inBlock{
+	display: inline-block;
+}
+.inline{
+	display: inline;
+}
+
+.myHR{
+    margin: 20px auto;
+    border-top: 1px solid #212529;
+}
+
+.bg-about {
+    background: url(../img/me2.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    min-height: 660px;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+#whoAmI{
+	text-align: center;
+	display: inline;
+}
+#whoAmI table{
+	margin: 0 auto;
+    font-size: 25px;
+}
+#whoAmI #link{
+	color: #212529;
+}
+#whoAmI td{
+	padding: 25px 25px;
+}
+
+.rea-img{
+    max-width: 100%;
+    height: 120px;
+    margin-bottom: 6%;
+}
+.pull-down{
+    position: absolute !important;
+    bottom: 0 !important;
+    padding: 0 25px !important;
+}
+
+#parcours{
+    background-color: rgb(20,20,20);
+    color: #fff;
+}
+.parcours-bloc {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: #fff;
+    position: relative;
+}
