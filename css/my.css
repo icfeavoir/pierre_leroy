@@ -40,13 +40,20 @@
 }
 #whoAmI table{
 	margin: 0 auto;
-    font-size: 25px;
+    font-size: x-large;
 }
 #whoAmI #link{
 	color: #212529;
 }
 #whoAmI td{
 	padding: 25px 25px;
+}
+
+.bar{
+    margin-bottom: 2%;
+}
+.bar-container{
+    margin: auto;
 }
 
 .rea-img{
@@ -64,6 +71,9 @@
     background-color: rgb(20,20,20);
     color: #fff;
 }
+.parcours-bloc-parent{
+    margin-bottom: 50px;
+}
 .parcours-bloc {
     font-family: 'Roboto Condensed';
     font-size: 22px;
@@ -71,4 +81,27 @@
     letter-spacing: 2px;
     color: #fff;
     position: relative;
+}
+.parcours-bloc .parcours-desc{
+    display: none;
+}
+#parcours .parcours-bloc:hover{
+    background-color: #222;
+}
+#experiences {
+    background-color: #ddd;
+    color: black;
+}
+#experiences .parcours-bloc{
+    color: black;
+}
+#experiences .parcours-bloc:hover{
+    background-color: #bbb;
+}
+
+
+@media (max-width: 530px) {
+    #whoAmI table{
+        font-size: medium;
+    }
 }

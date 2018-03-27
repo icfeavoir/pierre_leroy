@@ -24,15 +24,17 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
 
-    <!-- My CSS -->
-    <link href="css/my.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
     <!-- LINE -->
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="line/normalize.css" />
     <link rel="stylesheet" type="text/css" href="line/line.css" />
 
+    <!-- SASS -->
+    <link rel="stylesheet" type="text/css" href="css/sass.css" />
+
+    <!-- My CSS -->
+    <link href="css/my.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
 
   <body id="page-top">
@@ -44,7 +46,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="parallax-window" data-parallax="scroll" class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#parcours">Parcours</a>
@@ -77,8 +79,8 @@
           </div>
           <div class="col-lg-10 mx-auto">
             <p class="text-faded">Étudiant en 4<sup>ème</sup> année d'ingénieur à l'ESEO (École Supérieure d'Éléctronique de l'Ouest).<br/>
-              Recherche actuellement <b class="importantWordIntro">un contrat de profesionnalisation</b> dans le domaine de l'informatique.</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">En savoir plus  <i class="fa fa-arrow-down"></i></a>
+              Recherche actuellement un <b class="importantWordIntro">contrat de profesionnalisation</b> dans le domaine de l'informatique.</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#parcours">En savoir plus  <i class="fa fa-arrow-down"></i></a>
           </div>
         </div>
       </div>
@@ -94,18 +96,62 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-6 text-center">
-            <div class="parcours-bloc">
+          <div class="col-lg-6 col-md-6 text-center parcours-bloc-parent">
+            <div class="parcours-bloc meet">
               <p class="parcours-year">2011 − 2014</p>
               <p class="parcours-title">LYCÉE DON BOSCO</p>
               <p class="parcours-desc">Baccalauréat Scientifique Mention Assez Bien</p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 text-center">
-            <div class="parcours-bloc">
+          <div class="col-lg-6 col-md-6 text-center parcours-bloc-parent">
+            <div class="parcours-bloc meet">
               <p class="parcours-year">2014 − 2019</p>
               <p class="parcours-title">ESEO</p>
               <p class="parcours-desc">Baccalauréat Scientifique Mention Assez Bien</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiences">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Expériences</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 text-center parcours-bloc-parent">
+            <div class="parcours-bloc meet">
+              <p class="parcours-year">Septembre - Novembre 2017</p>
+              <p class="parcours-title">YouPic</p>
+              <p class="parcours-desc">Stage technique − Développement Web (frontend et backend)</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 text-center parcours-bloc-parent">
+            <div class="parcours-bloc meet">
+              <p class="parcours-year">2016 - 2018</p>
+              <p class="parcours-title">SEIO</p>
+              <p class="parcours-desc">Directeur des Systèmes d'Informations de la Junior-Entreprise de l'ESEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 text-center parcours-bloc-parent">
+            <div class="parcours-bloc meet">
+              <p class="parcours-year">Août 2015</p>
+              <p class="parcours-title">Modularis</p>
+              <p class="parcours-desc">Stage de programmation − Développement d’un site internet interne à l’entreprise pour faciliter la gestion des services après-vente.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 text-center parcours-bloc-parent">
+            <div class="parcours-bloc meet">
+              <p class="parcours-year">Juillet 2014, 2015, 2016, 2017</p>
+              <p class="parcours-title">Loisirs Pour Tous</p>
+              <p class="parcours-desc">Animateur de centre-aéré</p>
             </div>
           </div>
         </div>
@@ -156,127 +202,68 @@
     <section id="competences" class="bg-dark text-white">
       <div class="container text-center">
         <h2 class="mb-4">Mes compétences</h2>
+
+
         <div class="row">
-          <div class="col-lg-2 text-right">
-            <p class="bar-text sr-bars">HTML</p>
-          </div>
-          <div class="col-lg-8 text-left">
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 col-sm-8 col-xs-8 text-left bar-container">
             <div class="w3-light-grey w3-round-xlarge">
-              <div id="html" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="90">0%</div>
+              <div id="Web" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="90">Web</div>
             </div>
           </div>
         </div>
                 
         <div class="row">
-          <div class="col-lg-2 text-right">
-            <p class="bar-text sr-bars">CSS</p>
-          </div>
-          <div class="col-lg-8 text-left">
+          <div class="col-lg-8 col-sm-8 col-xs-8 text-left bar-container">
             <div class="w3-light-grey w3-round-xlarge">
-              <div id="css" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="70">0%</div>
+              <div id="sql" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="70">SQL</div>
             </div>
           </div>
         </div>
                 
         <div class="row">
-          <div class="col-lg-2 text-right">
-            <p class="bar-text sr-bars">PHP</p>
-          </div>
-          <div class="col-lg-8 text-left">
+          <div class="col-lg-8 col-sm-8 col-xs-8 text-left bar-container">
             <div class="w3-light-grey w3-round-xlarge">
-              <div id="php" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="90">0%</div>
+              <div id="javascript" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="60">JavaScript</div>
             </div>
           </div>
         </div>
                 
         <div class="row">
-          <div class="col-lg-2 text-right">
-            <p class="bar-text sr-bars">SQL</p>
-          </div>
-          <div class="col-lg-8 text-left">
+          <div class="col-lg-8 col-sm-8 col-xs-8 text-left bar-container">
             <div class="w3-light-grey w3-round-xlarge">
-              <div id="sql" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="70">0%</div>
+              <div id="react" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="40">React</div>
             </div>
           </div>
         </div>
                 
         <div class="row">
-          <div class="col-lg-2 text-right">
-            <p class="bar-text sr-bars">JavaScript</p>
-          </div>
-          <div class="col-lg-8 text-left">
+          <div class="col-lg-8 col-sm-8 col-xs-8 text-left bar-container">
             <div class="w3-light-grey w3-round-xlarge">
-              <div id="javascript" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="60">0%</div>
+              <div id="nodejs" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="40">NodeJS</div>
             </div>
           </div>
         </div>
                 
         <div class="row">
-          <div class="col-lg-2 text-right">
-            <p class="bar-text sr-bars">React</p>
-          </div>
-          <div class="col-lg-8 text-left">
+          <div class="col-lg-8 col-sm-8 col-xs-8 text-left bar-container">
             <div class="w3-light-grey w3-round-xlarge">
-              <div id="react" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="40">0%</div>
+              <div id="java" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="50">Java</div>
             </div>
           </div>
         </div>
                 
         <div class="row">
-          <div class="col-lg-2 text-right">
-            <p class="bar-text sr-bars">NodeJS</p>
-          </div>
-          <div class="col-lg-8 text-left">
+          <div class="col-lg-8 col-sm-8 col-xs-8 text-left bar-container">
             <div class="w3-light-grey w3-round-xlarge">
-              <div id="nodejs" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="40">0%</div>
+              <div id="android" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="55">Android</div>
             </div>
           </div>
         </div>
                 
-        <div class="row">
-          <div class="col-lg-2 text-right">
-            <p class="bar-text sr-bars">Java</p>
-          </div>
-          <div class="col-lg-8 text-left">
-            <div class="w3-light-grey w3-round-xlarge">
-              <div id="java" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="50">0%</div>
-            </div>
-          </div>
-        </div>
-                
-        <div class="row">
-          <div class="col-lg-2 text-right">
-            <p class="bar-text sr-bars">Git</p>
-          </div>
-          <div class="col-lg-8 text-left">
-            <div class="w3-light-grey w3-round-xlarge">
-              <div id="git" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="75">0%</div>
-            </div>
-          </div>
-        </div>
-                
-        <div class="row">
-          <div class="col-lg-2 text-right">
-            <p class="bar-text sr-bars">Android</p>
-          </div>
-          <div class="col-lg-8 text-left">
-            <div class="w3-light-grey w3-round-xlarge">
-              <div id="android" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="55">0%</div>
-            </div>
-          </div>
-        </div>
-                
-        <div class="row">
-          <div class="col-lg-2 text-right">
-            <p class="bar-text sr-bars">Linux</p>
-          </div>
-          <div class="col-lg-8 text-left">
-            <div class="w3-light-grey w3-round-xlarge">
-              <div id="linux" class="bar w3-container w3-blue w3-round-xlarge" style="width:0%" value="50">0%</div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="bg-primary no-margin-padding" id="about">

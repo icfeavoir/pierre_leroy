@@ -25,7 +25,6 @@ function activeBar(bar){
 		}else{
 			actual++;
 			bar.width(actual+'%');
-			bar.text(actual+'%');
 		}
 	}, 15);
 }
