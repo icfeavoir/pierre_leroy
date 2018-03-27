@@ -15,5 +15,14 @@
 }
 
 #competences .specialCol{
-	width: 20%;
+	width: 10%;
+}
+#competences .specialCol:first-child{
+	border-right: 1px solid white;
+}
+#competences .mainCol{
+	padding: 0 2%;
+}
+#competences .specialCol:last-child{
+	border-left: 1px solid white;
 }
