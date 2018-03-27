@@ -20,6 +20,7 @@ $after_experiences: #19b7f6;
   position: relative;
   vertical-align: middle;
   transition: max-height 0.5s, background-color 0.5s;
+  -webkit-transition: max-height 0.5s, background-color 0.5s;
 
   &::before,
   &::after {
@@ -64,6 +65,15 @@ $after_experiences: #19b7f6;
     transition:
       width 0.25s ease-out, // Width expands first
       height 0.25s ease-out 0.25s; // And then height
+    -webkit-transition:
+      width 0.25s ease-out, // Width expands first
+      height 0.25s ease-out 0.25s; // And then height
+    transition: // Animate height first, then width
+      height 0.25s ease-out,
+      width 0.25s ease-out 0.25s;
+    -webkit-transition: // Animate height first, then width
+      height 0.25s ease-out,
+      width 0.25s ease-out 0.25s;
   }
   &:hover::after {
     border-bottom-color: $after_parcours;
@@ -71,6 +81,18 @@ $after_experiences: #19b7f6;
     transition: // Animate height first, then width
       height 0.25s ease-out,
       width 0.25s ease-out 0.25s;
+      transition:
+            width 0.25s ease-out, // Width expands first
+            height 0.25s ease-out 0.25s; // And then height
+      transition: // Animate height first, then width
+            height 0.25s ease-out,
+            width 0.25s ease-out 0.25s;
+      -webkit-transition:
+            width 0.25s ease-out, // Width expands first
+            height 0.25s ease-out 0.25s; // And then height
+      -webkit-transition: // Animate height first, then width
+            height 0.25s ease-out,
+            width 0.25s ease-out 0.25s;
   }
 }
 
@@ -81,6 +103,18 @@ $after_experiences: #19b7f6;
     transition:
       width 0.25s ease-out, // Width expands first
       height 0.25s ease-out 0.25s; // And then height
+      transition:
+            width 0.25s ease-out, // Width expands first
+            height 0.25s ease-out 0.25s; // And then height
+      transition: // Animate height first, then width
+            height 0.25s ease-out,
+            width 0.25s ease-out 0.25s;
+      -webkit-transition:
+            width 0.25s ease-out, // Width expands first
+            height 0.25s ease-out 0.25s; // And then height
+      -webkit-transition: // Animate height first, then width
+            height 0.25s ease-out,
+            width 0.25s ease-out 0.25s;
   }
   &:hover::after {
     border-bottom-color: $after_experiences;
@@ -88,11 +122,17 @@ $after_experiences: #19b7f6;
     transition: // Animate height first, then width
       height 0.25s ease-out,
       width 0.25s ease-out 0.25s;
+      transition:
+            width 0.25s ease-out, // Width expands first
+            height 0.25s ease-out 0.25s; // And then height
+      transition: // Animate height first, then width
+            height 0.25s ease-out,
+            width 0.25s ease-out 0.25s;
+      -webkit-transition:
+            width 0.25s ease-out, // Width expands first
+            height 0.25s ease-out 0.25s; // And then height
+      -webkit-transition: // Animate height first, then width
+            height 0.25s ease-out,
+            width 0.25s ease-out 0.25s;
   }
-}
-
-@media (max-width: 770px) { /* each parcours bloc in a single row --> no animation*/
-    .meet{
-      max-height: calc(100% + 50px);
-    }
 }

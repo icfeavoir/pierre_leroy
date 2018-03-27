@@ -1,8 +1,19 @@
-.box{
-    width:300px;
-    height:300px;
-    margin:500px 50px;
-    background:red;
-    transition: 1.5s; /* THE DURATION */
+.bar{
+	max-width: 0%;
+	transition: max-width 2s cubic-bezier(.68,-0.06,.41,.98);
+	-webkit-transition: max-width 2s cubic-bezier(.68,-0.06,.41,.98);
+}
+.bar{
+    margin-bottom: 2%;
+}
+.bar-container{
+    margin: auto;
 }
 
+#competences table{
+	width: 100%;
+}
+
+#competences .specialCol{
+	width: 20%;
+}
