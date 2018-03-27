@@ -227,7 +227,6 @@ header.masthead {
   background: none;
   border: 0;
   box-sizing: border-box;
-  margin: 1em;
   padding: 1em 2em;
   box-shadow: inset 0 0 0 1px #0c5860;
   font-size: inherit;
@@ -249,31 +248,36 @@ header.masthead {
   .meet::before {
     top: 0;
     left: 0; }
-  .meet::after {
-    bottom: 0;
-    right: 0; }
   .meet:hover::before, .meet:hover::after {
     width: 100%;
     height: 100%; }
   .meet:hover {
-    max-height: calc(100% + 10px); }
-  .meet:hover::before {
-    border-top-color: #19b7f6;
-    border-right-color: #19b7f6;
-    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
-  .meet:hover::after {
-    border-bottom-color: #19b7f6;
-    border-left-color: #19b7f6;
-    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
+    max-height: calc(100% + 50px); }
   .meet::after {
     top: 0;
     left: 0; }
-  .meet:hover::before {
-    border-top-color: #19b7f6;
-    border-right-color: #19b7f6; }
-  .meet:hover::after {
-    border-bottom-color: #19b7f6;
-    border-left-color: #19b7f6;
-    transition: height 0.25s ease-out, width 0.25s ease-out 0.25s; }
+
+#parcours .meet:hover::before {
+  border-top-color: #165c77;
+  border-right-color: #165c77;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+#parcours .meet:hover::after {
+  border-bottom-color: #165c77;
+  border-left-color: #165c77;
+  transition: height 0.25s ease-out, width 0.25s ease-out 0.25s; }
+
+#experiences .meet:hover::before {
+  border-top-color: #19b7f6;
+  border-right-color: #19b7f6;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+#experiences .meet:hover::after {
+  border-bottom-color: #19b7f6;
+  border-left-color: #19b7f6;
+  transition: height 0.25s ease-out, width 0.25s ease-out 0.25s; }
+
+@media (max-width: 770px) {
+  /* each parcours bloc in a single row --> no animation*/
+  .meet {
+    max-height: calc(100% + 50px); } }
 
 /*# sourceMappingURL=sass.css.map */

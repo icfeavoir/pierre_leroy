@@ -67,11 +67,8 @@
     padding: 0 25px !important;
 }
 
-#parcours{
-    background-color: rgb(20,20,20);
-    color: #fff;
-}
-.parcours-bloc-parent{
+
+#parcours .section-heading, #experiences .section-heading{
     margin-bottom: 50px;
 }
 .parcours-bloc {
@@ -82,24 +79,68 @@
     color: #fff;
     position: relative;
 }
-.parcours-bloc .parcours-desc{
-    display: none;
+.parcours-desc{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s;
 }
-#parcours .parcours-bloc:hover{
+#experiences .parcours-bloc-parent{
+    margin-bottom: 7%;
+}
+#experiences .parcours-desc{
+    color: #ddd;
+}
+#parcours .parcours-desc{
+    color: rgb(20,20,20);
+}
+.parcours-bloc .parcours-desc{
+    padding: 0 2%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: medium;
+}
+#experiences .parcours-bloc:hover{
     background-color: #222;
 }
-#experiences {
+.parcours-bloc:hover .parcours-desc{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 1s;
+}
+#experiences{
+    background-color: rgb(20,20,20);
+    color: #fff;
+}
+#parcours {
     background-color: #ddd;
     color: black;
 }
-#experiences .parcours-bloc{
+#parcours .parcours-bloc{
     color: black;
 }
-#experiences .parcours-bloc:hover{
+#parcours .parcours-bloc:hover{
     background-color: #bbb;
 }
+#parcours .parcours-hr{
+    margin: 20px auto !important;
+    border-top: 1px solid black;
+}
+#experiences .parcours-hr{
+    margin: 20px auto !important;
+    border-top: 1px solid #fff;
+}
 
-
+@media (max-width: 770px) { /* each parcours bloc in a single row --> no animation*/
+    .parcours-desc{
+        visibility: visible;
+        opacity: 1;
+    }
+    #experiences .parcours-bloc-parent, #parcours .parcours-bloc-parent{
+        margin-bottom:20%;
+    }
+}
 @media (max-width: 530px) {
     #whoAmI table{
         font-size: medium;

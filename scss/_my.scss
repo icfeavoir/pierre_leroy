@@ -1,12 +1,12 @@
 //Colors
 $before: #0c5860;
-$after: #19b7f6;
+$after_parcours: #165c77;
+$after_experiences: #19b7f6;
 
 .meet {
 	background: none;
 	border: 0;
 	box-sizing: border-box;
-	margin: 1em;
 	padding: 1em 2em;
 	
 	// Using inset box-shadow instead of border for sizing simplicity
@@ -15,11 +15,11 @@ $after: #19b7f6;
 	font-weight: 700;
 
 	// Required, since we're setting absolute on pseudo-elements
-    height: calc(100% + 50px);
-    max-height: calc(100% - 20px);
-	position: relative;
-	vertical-align: middle;
-    transition: max-height 0.5s, background-color 0.5s;
+  height: calc(100% + 50px);
+  max-height: calc(100% - 20px);
+  position: relative;
+  vertical-align: middle;
+  transition: max-height 0.5s, background-color 0.5s;
 
   &::before,
   &::after {
@@ -39,12 +39,6 @@ $after: #19b7f6;
     left: 0;
   }
 
-  // And this the bottom & left borders (expands left, then up)
-  &::after {
-    bottom: 0;
-    right: 0;
-  }
-  
   // Hover styles
   &:hover::before,
   &:hover::after {
@@ -53,25 +47,7 @@ $after: #19b7f6;
   }
 
   &:hover{
-    // display: block;
-    max-height: calc(100% + 10px);
-  }
-
-  &:hover::before {
-    border-top-color: $after; // Make borders visible
-    border-right-color: $after;
-    transition:
-      width 0.25s ease-out, // Width expands first
-      height 0.25s ease-out 0.25s; // And then height
-  }
-
-  &:hover::after {
-    border-bottom-color: $after; // Make borders visible
-    border-left-color: $after;
-    transition:
-      border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
-      width 0.25s ease-out 0.5s, // And then exanding width
-      height 0.25s ease-out 0.75s; // And finally height
+    max-height: calc(100% + 50px);
   }
   
   // Start ::after in same position as ::before
@@ -79,19 +55,44 @@ $after: #19b7f6;
     top: 0;
     left: 0;
   }
+}
 
-  // Change colors
+#parcours .meet{
   &:hover::before {
-    border-top-color: $after;
-    border-right-color: $after;
+    border-top-color: $after_parcours; // Make borders visible
+    border-right-color: $after_parcours;
+    transition:
+      width 0.25s ease-out, // Width expands first
+      height 0.25s ease-out 0.25s; // And then height
   }
-
   &:hover::after {
-    border-bottom-color: $after;
-    border-left-color: $after;
+    border-bottom-color: $after_parcours;
+    border-left-color: $after_parcours;
     transition: // Animate height first, then width
       height 0.25s ease-out,
       width 0.25s ease-out 0.25s;
   }
+}
 
+#experiences .meet{
+  &:hover::before {
+    border-top-color: $after_experiences; // Make borders visible
+    border-right-color: $after_experiences;
+    transition:
+      width 0.25s ease-out, // Width expands first
+      height 0.25s ease-out 0.25s; // And then height
+  }
+  &:hover::after {
+    border-bottom-color: $after_experiences;
+    border-left-color: $after_experiences;
+    transition: // Animate height first, then width
+      height 0.25s ease-out,
+      width 0.25s ease-out 0.25s;
+  }
+}
+
+@media (max-width: 770px) { /* each parcours bloc in a single row --> no animation*/
+    .meet{
+      max-height: calc(100% + 50px);
+    }
 }
