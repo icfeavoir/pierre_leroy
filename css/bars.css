@@ -10,19 +10,24 @@
     margin: auto;
 }
 
-#competences table{
-	width: 100%;
-}
-
-#competences .specialCol{
-	width: 10%;
-}
-#competences .specialCol:first-child{
-	border-right: 1px solid white;
-}
 #competences .mainCol{
 	padding: 0 2%;
 }
-#competences .specialCol:last-child{
-	border-left: 1px solid white;
+#competences table{
+	width: 75%;
+	margin: auto;
+}
+
+.competencesLegende{
+	border-top: 1px solid #ddd;
+}
+.competencesLegende td{
+	width: 33%;
+	padding-top: 2%;
+}
+.competencesLegende td:first-child{
+	text-align: left;
+}
+.competencesLegende td:last-child{
+	text-align: right;
 }
