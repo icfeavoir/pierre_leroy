@@ -5,6 +5,7 @@
 }
 .bar{
     margin-bottom: 2%;
+	white-space: nowrap;
 }
 .bar-container{
     margin: auto;
