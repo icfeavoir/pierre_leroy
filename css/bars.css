@@ -18,9 +18,6 @@
 	margin: auto;
 }
 
-.competencesLegende{
-	border-top: 1px solid #ddd;
-}
 .competencesLegende td{
 	width: 33%;
 	padding-top: 2%;
@@ -30,4 +27,9 @@
 }
 .competencesLegende td:last-child{
 	text-align: right;
+}
+.competences-hr{
+	width: 100%;
+	max-width: none;
+	margin: 0 auto;
 }
