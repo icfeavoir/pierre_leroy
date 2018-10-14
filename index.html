@@ -40,6 +40,8 @@
     <link href="css/bars.css" rel="stylesheet">
     <link href="css/my.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="balls/balls.css" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116548891-1"></script>
     <script>
@@ -94,8 +96,8 @@
             <hr>
           </div>
           <div class="col-lg-10 mx-auto">
-            <p class="text-faded">Étudiant en 4<sup>ème</sup> année d'ingénieur à l'ESEO (École Supérieure d'Éléctronique de l'Ouest).<br/>
-              Recherche actuellement un <b class="importantWordIntro">contrat de professionnalisation</b> du 3 septembre 2018 au 6 septembre 2019 dans le domaine de l'informatique.</p>
+            <p class="text-faded">Étudiant en 5<sup>ème</sup> année d'ingénieur à l'ESEO (École Supérieure d'Éléctronique de l'Ouest).<br/>
+              <br>
             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#parcours">En savoir plus  <i class="fa fa-arrow-down"></i></a>
           </div>
         </div>
@@ -222,70 +224,17 @@
     </section>
 
     <section id="competences" class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Mes compétences</h2>
+      <canvas id="canvas"></canvas>
 
-        <table>
-          <tr>
-            <td class="mainCol" colspan="3">
-              <div class="w3-light-grey w3-round-xlarge">
-                <div id="Web" class="bar w3-container w3-blue w3-round-xlarge" style="width:100%" value="90">Web (HTML, CSS, PHP)</div>
-              </div>
-            </td>
-          </tr>
-          </tr>  
+      <ball data-name="HTML" data-value="70" data-text-color="white" data-color="#F06529" />
+      <ball data-name="CSS" data-value="50" />
+      <ball data-name="PHP" data-value="80" data-text-color="white" data-color="#4f5b93" />
+      <ball data-name="JavaScript" data-value="65" data-text-color="black" data-color="#f7df1e" />
+      <ball data-name="Java" data-value="70" data-text-color="white" data-color="#FFA518" />
+      <ball data-name="NodeJS" data-value="25" data-text-color="white" data-color="#215732" />
+      <ball data-name="SQL" data-value="60" data-text-color="white" data-color="#00758f" />
+      <ball data-name="Android" data-value="60" data-text-color="white" data-color="#a4c639" />
 
-          <tr>
-            <td class="mainCol" colspan="3">
-              <div class="w3-light-grey w3-round-xlarge">
-                <div id="javascript" class="bar w3-container w3-blue w3-round-xlarge" style="width:100%" value="65">JavaScript</div>
-              </div>
-            </td>
-          </tr>  
-
-          <tr>
-            <td class="mainCol" colspan="3">
-              <div class="w3-light-grey w3-round-xlarge">
-                <div id="nodejs" class="bar w3-container w3-blue w3-round-xlarge" style="width:100%" value="40">NodeJS</div>
-              </div>
-            </td>
-          </tr>   
-
-          <tr>
-            <td class="mainCol" colspan="3">
-              <div class="w3-light-grey w3-round-xlarge">
-                <div id="sql" class="bar w3-container w3-blue w3-round-xlarge" style="width:100%" value="75">SQL</div>
-              </div>
-            </td>
-                  
-     
-          <tr>
-            <td class="mainCol" colspan="3">
-              <div class="w3-light-grey w3-round-xlarge">
-                <div id="java" class="bar w3-container w3-blue w3-round-xlarge" style="width:100%" value="75">Java</div>
-              </div>
-            </td>
-          </tr>        
-          <tr>
-            <td class="mainCol" colspan="3">
-              <div class="w3-light-grey w3-round-xlarge">
-                <div id="android" class="bar w3-container w3-blue w3-round-xlarge" style="width:100%" value="60">Android</div>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td colspan="3"><hr class="competences-hr"></td>
-          </tr>
-
-          <tr class="competencesLegende">
-            <td>Débutant</td>
-            <td>Intermédiaire</td>
-            <td>Avancé</td>
-          </tr>     
-
-        </table>
-                
     </section>
 
     <section class="bg-primary no-margin-padding" id="about">
@@ -339,6 +288,8 @@
     <!-- My JS -->
     <script src="js/bars.js"></script>
     <script src="js/myJs.js"></script>
+
+    <script type="text/javascript" src="balls/balls.js"></script>
 
   </body>
 </html>

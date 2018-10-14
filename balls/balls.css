@@ -1,0 +1,15 @@
+#canvas {
+    margin: 0 auto;
+    background-color: #212529;
+    height: 500px;
+}
+h1 {
+    text-align:center;
+}
+#competences {
+    padding: 0;
+}
+
+ball {
+    display: none;
+}
