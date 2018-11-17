@@ -127,7 +127,7 @@
     border-top: 1px solid #fff;
 }
 
-@media (max-width: 990px) { /* descriptino -> 3rows */
+@media (max-width: 990px) { /* description -> 3rows */
     .parcours-desc{
         line-height: normal;
     }

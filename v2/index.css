@@ -16,7 +16,7 @@
   }
   
   #c2 {
-    background: red;
+    background: rgb(20,20,20);
     padding: 0;
     overflow-y: hidden;
   }
@@ -28,12 +28,16 @@
   
   .card {
     color: black;
-    display: inline-block;
+    display: inline-block !important;
     border: 1px solid white;
-    width: 30%;
-    height: 96%;
+    width: 25%;
+    height: 90vh;
     border-radius: 4px;
-    margin: 2% 10px;
+    margin: 5vh 0;
+  }
+  .middle-card {
+      margin-left: 10%;
+      margin-right: 10%;
   }
   
   .code {
@@ -49,6 +53,7 @@
     text-align: center;
     height: 100vh;
     padding: 10px;
+    overflow: hidden;
   }
   
   .ball {
@@ -66,3 +71,71 @@
     display: table-cell;
     vertical-align: middle;
   }
+
+  /* EXPERIENCES */
+#experiences .parcours-bloc-parent{
+    margin-bottom: 15vh;
+}
+#experiences .parcours-desc{
+    color: #ddd;
+}
+#parcours .parcours-desc{
+    color: rgb(20,20,20);
+}
+.parcours-bloc .parcours-desc{
+    padding: 0 2%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: medium;
+}
+#experiences .parcours-bloc:hover{
+    background-color: #222;
+}
+.parcours-bloc:hover .parcours-desc{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 1s;
+    -webkit-transition: visibility 0s, opacity 1s;
+}
+#experiences{
+    background-color: rgb(20,20,20);
+    color: #fff;
+}
+#parcours {
+    background-color: #ddd;
+    color: black;
+}
+#parcours .parcours-bloc{
+    color: black;
+}
+#parcours .parcours-bloc:hover{
+    background-color: #bbb;
+}
+#parcours .parcours-hr{
+    margin: 20px auto !important;
+    border-top: 1px solid black;
+}
+#experiences .parcours-hr{
+    margin: 20px auto !important;
+    border-top: 1px solid #fff;
+}
+
+#parcours .section-heading, #experiences .section-heading{
+    margin-bottom: 50px;
+}
+.parcours-bloc {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: #fff;
+    position: relative;
+}
+.parcours-desc{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s;
+    -webkit-transition: visibility 0s, opacity 1s;
+}
